@@ -1,0 +1,50 @@
+header{
+    border: 1px solid black;
+    min-height: 250px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+ul.onglet{
+    display: flex;
+    list-style: none;
+    
+}
+a{
+    text-decoration: none;
+}
+main{
+    border: 1px solid blue;
+    min-height: 800px;
+}
+section.a{
+    border: 1px solid violet;
+    min-height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+article{
+    border: 1px solid red;
+    min-height: 200px;
+    width: 50%;
+}
+.hebergement{
+    width: 30%;
+
+}
+aside{
+    border: 1px solid grey;
+    min-height: 200px;
+    width: 30%;
+}
+section.b{
+    border: 1px solid green;
+    min-height: 400px;
+}
+footer{
+    border: 1px solid brown;
+    min-height: 150px;
+}
