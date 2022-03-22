@@ -1,6 +1,6 @@
 /*code css pour le block de la page html*/
 .blockpage{
-    width: 1200px;
+    width: 1500px;
     margin: auto;
 }
 /*code css pour le header */
@@ -25,56 +25,65 @@ a{
 ul.filtres{
     list-style: none;
     display: flex;
-    padding:  4px 800px 0 0 ;
+    padding:  4px 1100px 0 0 ;
+    justify-content: space-around;
+    justify-content: space-between;
 }
-  
-main{
-    border: 1px solid blue;
-    min-height: 800px;
-}
+
 section.HébergementàMarseille{
     border: 1px solid violet;
-    min-height: 450px;
     display: flex;
     justify-content: space-between;
     justify-content: space-around;
 }
+h2{
+    margin-left: 35px;
+}
+h4{
+    margin-left: 35px;
+}
 article{
-    border: 1px solid red;
-    min-height: 300px;
     width: 60%;
+    background-color: rgba(128, 128, 128, 0.123);
+    border-radius: 30px;
+
 }
 p.pop{
-display: flex;
-flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
 }
 .photo1{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     justify-content: space-around;
-    padding-top: 15px;
+    margin-top: -20px;
 }
 
 .photo2{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    justify-content: space-around;
-    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
 }
 aside{
-    border: 1px solid grey;
     min-height: 200px;
-    width: 20%;
+    width: 30%;
+    background-color: rgba(128, 128, 128, 0.123);
+    border-radius: 30px;
 }
-section.activités{
-    border: 1px solid green;
-    min-height: 400px;
+section.Activités{
+    border: 1px solid yellow;
+    max-height: 1500px;
+}
+.photo3{
+    display: flex;
+    justify-content: space-around;
+    margin-top: -20px;
 }
 footer{
     border: 1px solid brown;
     min-height: 10px;
     display: flex;
     align-items: stretch;
+    background-color: rgba(128, 128, 128, 0.123);
 }
