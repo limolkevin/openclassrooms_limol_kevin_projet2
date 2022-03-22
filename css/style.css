@@ -1,3 +1,9 @@
+/*code css pour le block de la page html*/
+.blockpage{
+    width: 1200px;
+    margin: auto;
+}
+/*code css pour le header */
 header{
     border: 1px solid black;
     min-height: 250px;
@@ -5,46 +11,70 @@ header{
 nav{
     display: flex;
     justify-content: space-between;
+    padding: 25px 0 0 0;
 }
-ul.onglet{
+ul.onglets{
     display: flex;
     list-style: none;
-    
+    padding: 0 200px 0px 0px ;
+
 }
-a{
+a{  
     text-decoration: none;
 }
+ul.filtres{
+    list-style: none;
+    display: flex;
+    padding:  4px 800px 0 0 ;
+}
+  
 main{
     border: 1px solid blue;
     min-height: 800px;
 }
-section.a{
+section.HébergementàMarseille{
     border: 1px solid violet;
-    min-height: 400px;
+    min-height: 450px;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     justify-content: space-around;
-    width: 100%;
 }
 article{
     border: 1px solid red;
-    min-height: 200px;
-    width: 50%;
+    min-height: 300px;
+    width: 60%;
 }
-.hebergement{
-    width: 30%;
+p.pop{
+display: flex;
+flex-direction: row;
+}
+.photo1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: space-around;
+    padding-top: 15px;
+}
 
+.photo2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: flex-start;
 }
 aside{
     border: 1px solid grey;
     min-height: 200px;
-    width: 30%;
+    width: 20%;
 }
-section.b{
+section.activités{
     border: 1px solid green;
     min-height: 400px;
 }
 footer{
     border: 1px solid brown;
-    min-height: 150px;
+    min-height: 10px;
+    display: flex;
+    align-items: stretch;
 }
