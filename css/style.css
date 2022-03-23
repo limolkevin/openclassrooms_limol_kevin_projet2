@@ -48,9 +48,13 @@ article{
     border-radius: 30px;
 
 }
-p.pop{
+div.img{
     display: flex;
     flex-wrap: wrap;
+}
+.img div{
+    display: flex;
+    flex-direction: column;
 }
 .photo1{
     display: flex;
@@ -63,7 +67,8 @@ p.pop{
 .photo2{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    
 }
 aside{
     min-height: 200px;
@@ -84,6 +89,7 @@ footer{
     border: 1px solid brown;
     min-height: 10px;
     display: flex;
-    align-items: stretch;
+    flex-direction: row;
+    justify-content: space-around;
     background-color: rgba(128, 128, 128, 0.123);
 }
