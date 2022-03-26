@@ -1,99 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 /*code css pour le block de la page html*/
-.blockpage{
-    width: 1500px;
+.blockpage {
+    width: 99%;
     margin: auto;
 }
+
 /*code css pour le header */
-header{
+header {
     border: 1px solid black;
-    min-height: 250px;
+    height: auto
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     padding: 25px 0 0 0;
 }
-ul.onglets{
+
+ul.onglets {
     display: flex;
     list-style: none;
-    padding: 0 200px 0px 0px ;
-
+    padding: 0 200px 0px 0px;
 }
-a{  
+
+a {
     text-decoration: none;
 }
-ul.filtres{
+
+.filtres {
     list-style: none;
     display: flex;
-    padding:  4px 1100px 0 0 ;
-    justify-content: space-around;
-    justify-content: space-between;
 }
-
-section.HebergementaMarseille{
+.filtres li:hover {
+    background-color: gray;
+    font-style: italic;
+  }
+  
+section.HebergementaMarseille {
     border: 1px solid violet;
     display: flex;
     justify-content: space-between;
     justify-content: space-around;
 }
-h2{
-    margin-left: 35px;
+
+h2 {
+    margin-left: 4%;
+    display: flex;
+    justify-content: space-between;
 }
-h4{
-    margin-left: 35px;
+
+h4 {
+    margin-left: 4%;
 }
-article{
+
+article {
     width: 60%;
     background-color: #F2F2F2;
-    border-radius: 30px;
-
+    border-radius: 15%;
 }
 
-.photo1{
+.photo1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     justify-content: space-around;
     margin-top: -20px;
 }
-.photohebergement{
-    border-radius: 10px 10px 0 0 ;
+
+.photohebergement {
+    border-radius: 10px 10px 0 0;
     width: 225px;
     height: 100px;
 }
-div.img{
+
+div.img {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 }
-.img div{
+
+.img div {
     display: flex;
     flex-direction: column;
 }
-.photo2{
+
+.photo2 {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-between;
+
 }
-aside{
+
+.photopopulaires {
+    width: 120px;
+    height: 110px;
+    border-radius: 10px 10px 0 0;
+}
+
+aside {
     min-height: 200px;
     width: 30%;
     background-color: #F2F2F2;
-    border-radius: 30px;
+    border-radius: 15%;
 }
-section.Activités{
+
+section.Activites {
     border: 1px solid yellow;
-    max-height: 1500px;
+
 }
-.photo3{
+
+.photo3 {
     display: flex;
     justify-content: space-around;
     margin-top: -20px;
 }
-footer{
+.activite1{
+    width: 350px;
+    height: 400px;
+}
+.activite2{
+    width: 350px;
+    height: 180px;
+}
+footer {
     border: 1px solid brown;
     min-height: 10px;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     background-color: rgba(128, 128, 128, 0.123);
 }
