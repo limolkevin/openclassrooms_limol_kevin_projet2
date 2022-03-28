@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
 /*code css pour le block de la page html*/
 .blockpage {
     width: 99%;
@@ -20,8 +21,31 @@ nav {
 ul.onglets {
     display: flex;
     list-style: none;
-    padding: 0 200px 0px 0px;
+    margin-top: -10px;
+    padding: 0 200px 0 0;
 }
+
+.onglets li:hover {
+    border-top: 2px solid #0065FC;
+    padding-top: 20px;
+    color: #0065FC;
+}
+form{
+    display: flex;
+    width: 50%;
+}
+form button{
+    width: 20%;
+    height: 40px;
+}
+
+.fa-location-dot::before{
+    width: 30px;
+    height: 50px;
+    font-size: 40px;
+    margin-right: 5px;
+}   
+
 
 a {
     text-decoration: none;
@@ -30,12 +54,19 @@ a {
 .filtres {
     list-style: none;
     display: flex;
+    font-size: large;
+    flex-wrap: wrap;
 }
 .filtres li:hover {
     background-color: gray;
     font-style: italic;
-  }
-  
+}
+ul.filtres{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
 section.HebergementaMarseille {
     border: 1px solid violet;
     display: flex;
@@ -57,6 +88,7 @@ article {
     width: 60%;
     background-color: #F2F2F2;
     border-radius: 15%;
+
 }
 
 .photo1 {
@@ -65,12 +97,15 @@ article {
     justify-content: space-between;
     justify-content: space-around;
     margin-top: -20px;
+
 }
 
 .photohebergement {
     border-radius: 10px 10px 0 0;
     width: 225px;
     height: 100px;
+    object-fit: cover;
+
 }
 
 div.img {
@@ -88,13 +123,14 @@ div.img {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-
 }
 
 .photopopulaires {
     width: 120px;
     height: 110px;
     border-radius: 10px 10px 0 0;
+    object-fit: cover;
+
 }
 
 aside {
@@ -106,22 +142,30 @@ aside {
 
 section.Activites {
     border: 1px solid yellow;
-
 }
 
 .photo3 {
     display: flex;
     justify-content: space-around;
     margin-top: -20px;
+
 }
-.activite1{
-    width: 350px;
+
+.activite1 {
+    width: 300px;
     height: 400px;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+
 }
-.activite2{
+
+.activite2 {
     width: 350px;
     height: 180px;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
 }
+
 footer {
     border: 1px solid brown;
     min-height: 10px;
@@ -129,3 +173,9 @@ footer {
     justify-content: space-around;
     background-color: rgba(128, 128, 128, 0.123);
 }
+
+p.images {
+    border-radius: ;
+    box-shadow: 50px blue;
+}
+
