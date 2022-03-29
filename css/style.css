@@ -2,7 +2,7 @@
 
 /*code css pour le block de la page html*/
 .blockpage {
-    width: 99%;
+    width: 90%;
     margin: auto;
 }
 
@@ -30,21 +30,34 @@ ul.onglets {
     padding-top: 20px;
     color: #0065FC;
 }
-form{
+
+form {
     display: flex;
     width: 50%;
+    font-weight: bold;
 }
-form button{
-    width: 20%;
-    height: 40px;
+::placeholder{
+    font-weight: bolder;
+    color: black;
 }
 
-.fa-location-dot::before{
+form button {
+    width: 20%;
+    height: 40px;
+    background-color: #0065FC;
+    border-radius: 0 20px 20px 0px;
+    font-size: large;
+    font-weight: bolder;
+    padding: 20px;
+    color: white;
+}
+
+.fa-location-dot::before {
     width: 30px;
     height: 50px;
     font-size: 40px;
     margin-right: 5px;
-}   
+}
 
 
 a {
@@ -53,18 +66,34 @@ a {
 
 .filtres {
     list-style: none;
-    display: flex;
-    font-size: large;
     flex-wrap: wrap;
+    font-size: large;
 }
+
 .filtres li:hover {
     background-color: gray;
     font-style: italic;
 }
-ul.filtres{
+
+.filtres span {
+    border-radius: 100%;
+    padding: 20px;
+    background-color: #DEEBFF;
+    margin-left: -15px;
+}
+
+.filtres li {
+    border: 2px solid #DEEBFF;
+    border-radius: 30px;
+    padding: 10px;
+    
+}
+
+ul.filtres {
     width: 80%;
     display: flex;
     justify-content: space-around;
+    margin-top: -55px;
 }
 
 section.HebergementaMarseille {
@@ -160,7 +189,7 @@ section.Activites {
 }
 
 .activite2 {
-    width: 350px;
+    width: 280px;
     height: 180px;
     border-radius: 10px 10px 0 0;
     object-fit: cover;
@@ -175,7 +204,15 @@ footer {
 }
 
 p.images {
-    border-radius: ;
-    box-shadow: 50px blue;
+    box-shadow: 0 3px 20px grey;
+    border-radius: 8%;
+    padding-bottom: 1%;
 }
 
+i {
+    color: #0065FC;
+}
+
+i.fa-chart-line {
+    color: black;
+}
