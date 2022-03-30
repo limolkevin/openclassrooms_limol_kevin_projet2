@@ -2,16 +2,12 @@
 
 /*code css pour le block de la page html*/
 .blockpage {
-    width: 90%;
+    width: 1440px;
+    height: 100%;
     margin: auto;
 }
 
 /*code css pour le header */
-header {
-    border: 1px solid black;
-    height: auto
-}
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -33,23 +29,21 @@ ul.onglets {
 
 form {
     display: flex;
-    width: 50%;
-    font-weight: bold;
 }
-::placeholder{
+
+::placeholder {
     font-weight: bolder;
     color: black;
 }
 
 form button {
-    width: 20%;
-    height: 40px;
+    width: 10%;
     background-color: #0065FC;
     border-radius: 0 20px 20px 0px;
     font-size: large;
     font-weight: bolder;
-    padding: 20px;
     color: white;
+    border: black solid 1px;
 }
 
 .fa-location-dot::before {
@@ -86,7 +80,7 @@ a {
     border: 2px solid #DEEBFF;
     border-radius: 30px;
     padding: 10px;
-    
+
 }
 
 ul.filtres {
@@ -97,7 +91,6 @@ ul.filtres {
 }
 
 section.HebergementaMarseille {
-    border: 1px solid violet;
     display: flex;
     justify-content: space-between;
     justify-content: space-around;
@@ -150,8 +143,8 @@ div.img {
 
 .photo2 {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
+    padding-left: 6%;
 }
 
 .photopopulaires {
@@ -169,9 +162,6 @@ aside {
     border-radius: 15%;
 }
 
-section.Activites {
-    border: 1px solid yellow;
-}
 
 .photo3 {
     display: flex;
@@ -196,11 +186,9 @@ section.Activites {
 }
 
 footer {
-    border: 1px solid brown;
-    min-height: 10px;
+    background-color: #F2F2F2;
     display: flex;
     justify-content: space-around;
-    background-color: rgba(128, 128, 128, 0.123);
 }
 
 p.images {
@@ -215,4 +203,7 @@ i {
 
 i.fa-chart-line {
     color: black;
+}
+.grey_i{
+    color: grey;
 }
