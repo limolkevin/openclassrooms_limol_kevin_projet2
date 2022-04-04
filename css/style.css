@@ -2,8 +2,16 @@
 
 /*code css pour le block de la page html*/
 .blockpage {
-    width: 1440px;
+    width: 95%;
     margin: auto;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+h1{
+    font-weight: 900;
 }
 
 /*code css pour le header */
@@ -15,7 +23,7 @@ nav {
 }
 
 nav img {
-    width: 100px;
+    width: 8%;
 }
 
 ul.onglets {
@@ -28,7 +36,7 @@ ul.onglets {
 
 .onglets li:hover {
     border-top: 2px solid #0065FC;
-    padding-top: 20px;
+    padding: 20px;
     color: #0065FC;
     font-weight: bold;
 }
@@ -45,7 +53,7 @@ form label {
     background-color: #F2F2F2;
     padding: 0.5%;
     border-radius: 10%;
-    margin-left: -16px;
+    margin-left: -6px;
 }
 
 ::placeholder {
@@ -54,12 +62,13 @@ form label {
 }
 
 form button {
-    width: 8%;
+    width: 9%;
     background-color: #0065FC;
     border-radius: 0 10px 10px 0px;
     font-size: large;
     font-weight: bolder;
     color: white;
+    border: 0;
 }
 
 .fa-location-dot::before {
@@ -72,40 +81,26 @@ a {
     color: black;
 }
 
-.filtres {
-    list-style: none;
-    flex-wrap: wrap;
-    font-size: large;
-    font-weight: bolder;
-}
-
-.filtres li:hover {
-    background-color: gray;
-    font-style: italic;
-}
-
-.filtres span {
-    border-radius: 100%;
-    padding: 20px;
-    background-color: #DEEBFF;
-    margin-left: -15px;
-}
-
-.filtres li {
-    border: 2px solid #DEEBFF;
-    border-radius: 30px;
-    padding: 10px;
-
-}
-
-ul.filtres {
-    width: 80%;
+.toutfiltres {
     display: flex;
-    justify-content: space-around;
-    margin-top: -55px;
-
+    font-size: large;
 }
 
+.filtres {
+    display: flex;
+    align-items: center;    
+    list-style: none;
+    gap: 30px;
+}
+.i{
+    border: 1px solid black;
+    border-radius: 100%;
+}
+.filtres li{
+    border: 1px solid black;
+    padding: 10px 10px -10px 10px;
+    border-radius: 10px;
+}
 section.HebergementaMarseille {
     display: flex;
     justify-content: space-between;
@@ -130,7 +125,7 @@ article {
     flex-wrap: wrap;
     justify-content: space-between;
     justify-content: space-around;
-    margin-top: -20px;
+    margin-top: -2%;
 
 }
 
@@ -139,7 +134,7 @@ article {
     width: 225px;
     height: 100px;
     object-fit: cover;
-
+    padding: 5px;
 }
 
 div.img {
@@ -151,12 +146,24 @@ div.img {
 .img div {
     display: flex;
     flex-direction: column;
+    margin-left: 5%;
+}
+
+i.pop {
+    margin-top: 15%;
+}
+
+.first-star {
+    margin-left: 5%;
 }
 
 .photo2 {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding-left: 6%;
+    gap: 25px;
+
 }
 
 .photopopulaires {
@@ -164,6 +171,9 @@ div.img {
     height: 110px;
     border-radius: 10px 10px 0 0;
     object-fit: cover;
+    box-shadow: 0 3px 20px grey;
+    border-radius: 8%;
+    padding: 5px;
 
 }
 
@@ -179,15 +189,14 @@ aside {
 .photo3 {
     display: flex;
     justify-content: space-around;
-    margin-top: -20px;
+    margin-top: -1.5%;
 }
 
 .activite1 {
     width: 300px;
     height: 400px;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0;
     object-fit: cover;
-
 }
 
 .activite2 {
