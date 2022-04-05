@@ -10,7 +10,8 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
 }
-h1{
+
+h1 {
     font-weight: 900;
 }
 
@@ -84,27 +85,37 @@ a {
 .toutfiltres {
     display: flex;
     font-size: large;
+    align-items: center;
 }
 
 .filtres {
     display: flex;
-    align-items: center;    
+    align-items: center;
     list-style: none;
     gap: 30px;
 }
-.i{
-    border: 1px solid black;
+
+.filtres li {
+    border: 1px solid #DEEBFF;
+    border-radius: 30px;
+}
+
+.filtres li i {
     border-radius: 100%;
+    padding: 13px;
+    background-color: #DEEBFF;
+    margin-left: -4px;
 }
-.filtres li{
-    border: 1px solid black;
-    padding: 10px 10px -10px 10px;
-    border-radius: 10px;
+
+.filtres li span {
+    margin: 10px;
 }
+
 section.HebergementaMarseille {
     display: flex;
     justify-content: space-between;
     justify-content: space-around;
+    max-height: min-content;
 }
 
 h2 {
@@ -134,23 +145,29 @@ article {
     width: 225px;
     height: 100px;
     object-fit: cover;
+}
+
+.photo1 p {
     padding: 5px;
 }
 
-div.img {
+p.img {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    box-shadow: 0 3px 20px grey;
+    border-radius: 8%;
+    padding-bottom: 1%;
+    gap: 5px;
+    padding: 5px;
 }
 
-.img div {
+.img p {
     display: flex;
     flex-direction: column;
-    margin-left: 5%;
 }
 
 i.pop {
-    margin-top: 15%;
+    margin-top: 35%;
 }
 
 .first-star {
@@ -171,25 +188,21 @@ i.pop {
     height: 110px;
     border-radius: 10px 10px 0 0;
     object-fit: cover;
-    box-shadow: 0 3px 20px grey;
     border-radius: 8%;
     padding: 5px;
 
 }
 
 aside {
-    min-height: 200px;
     width: 30%;
     background-color: #F2F2F2;
     border-radius: 15%;
     padding: 2%;
 }
 
-
-.photo3 {
+#Activites {
     display: flex;
-    justify-content: space-around;
-    margin-top: -1.5%;
+    justify-content: space-between;
 }
 
 .activite1 {
@@ -219,6 +232,7 @@ p.images {
     padding-bottom: 1%;
 }
 
+p
 i {
     color: #0065FC;
 }
@@ -233,4 +247,7 @@ i {
 
 .fa-location-dot {
     color: black;
+}
+strong{
+    font-weight: bolder;
 }
