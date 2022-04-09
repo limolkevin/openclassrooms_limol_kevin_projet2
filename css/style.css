@@ -2,19 +2,18 @@
 
 /*code css pour le block de la page html*/
 .blockpage {
-    width: 1440px;
-    margin: auto;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
+
 
 body {
     font-family: 'Raleway', sans-serif;
 }
 
-h1 {
-    font-weight: 900;
-}
-
 /*code css pour le header */
+
 nav {
     display: flex;
     align-items: center;
@@ -34,17 +33,20 @@ ul.onglets {
 }
 
 .onglets li:hover {
-    border-top: 2px solid #0065FC;
-    padding: 20px;
+    border-top: 3px solid #0065FC;
     color: #0065FC;
+    margin-top: -25%;
+    padding-top: 22%;
 }
 
 form {
     display: flex;
+    width: 2000px;
 }
 
 input {
     border: 0px;
+    width: 220px;
 }
 
 form label {
@@ -66,10 +68,11 @@ form button.b2 {
     font-weight: bolder;
     color: white;
     border: 0;
+    display: none;
 }
 
 form button.b1 {
-    width: 9%;
+    width: 6%;
     background-color: #0065FC;
     border-radius: 0 10px 10px 0px;
     font-size: large;
@@ -186,7 +189,6 @@ aside {
 
 p.img {
     display: flex;
-    flex-wrap: wrap;
     box-shadow: 0 3px 20px grey;
     border-radius: 8%;
     padding-bottom: 1%;
@@ -194,13 +196,8 @@ p.img {
     padding: 5px;
 }
 
-.img p {
-    display: flex;
-    flex-direction: column;
-}
-
 i.pop {
-    margin-top: 35%;
+    margin-top: 32%;
 }
 
 .first-star {
@@ -225,34 +222,53 @@ i.pop {
 
 #Activites {
     display: flex;
+    width: 100%;
     justify-content: space-between;
 }
 
+
 .activite1 {
     width: 300px;
-    height: 400px;
+    height: 375px;
     border-radius: 10px 10px 0;
     object-fit: cover;
 }
 
 .activite2 {
     width: 350px;
-    height: 180px;
+    height: 160px;
     border-radius: 10px 10px 0 0;
     object-fit: cover;
 }
 
 footer {
-    margin-left: -150px;
-    background-color: #F2F2F2;
     display: flex;
-    justify-content: space-around;
+    background-color: #F2F2F2;
+}
+
+.footerleft {
+    width: 33%;
+}
+
+.footermiddle {
+    width: 33%;
+
+}
+
+.footerend {
+    width: 33%;
+
 }
 
 p.images {
     box-shadow: 0 3px 20px grey;
     border-radius: 8%;
-    padding-bottom: 1%;
+    padding-bottom: 4%;
+}
+
+p.images strong {
+    padding: 10px;
+    margin-top: 5px;
 }
 
 p i {
@@ -276,6 +292,54 @@ strong {
 }
 
 @media screen and (min-width : 768px) and (max-width : 992px) {
+
     form button.b1 {
         display: none;
     }
+
+    form button.b2 {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width : 767px) {
+
+    .blockpage {
+        display: block;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        background-color: #F2F2F2;
+        border-radius: 15%;
+        padding: 2%;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        background-color: #F2F2F2;
+        border-radius: 15%;
+        padding: 2%;
+    }
+    #Activites {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    form button.b1 {
+        display: none;
+    }
+
+    form button.b2 {
+        display: inline-block;
+    }
+}
