@@ -303,38 +303,10 @@ strong {
 }
 
 @media screen and (max-width : 767px) {
-
-    .blockpage {
-        display: block;
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 100%;
+    nav img {
+        width: 125px;
     }
 
-    article {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 100%;
-        background-color: #F2F2F2;
-        border-radius: 15%;
-        padding: 2%;
-    }
-
-    aside {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 100%;
-        background-color: #F2F2F2;
-        border-radius: 15%;
-        padding: 2%;
-    }
-    #Activites {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
     form button.b1 {
         display: none;
     }
@@ -342,4 +314,51 @@ strong {
     form button.b2 {
         display: inline-block;
     }
+
+    h4.prems {
+        margin-top: -130px;
+    }
+
+    ul.filtres {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    section.HebergementaMarseille {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    article {
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    aside {
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    section.Activitesmarseille {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    footer {}
+
 }
