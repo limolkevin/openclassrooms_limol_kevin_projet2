@@ -266,9 +266,8 @@ p.images {
     padding-bottom: 4%;
 }
 
-p.images strong {
-    padding: 10px;
-    margin-top: 5px;
+#Activites strong {
+    padding: 15px;
 }
 
 p i {
@@ -303,62 +302,82 @@ strong {
 }
 
 @media screen and (max-width : 767px) {
-    nav img {
-        width: 125px;
-    }
+    @media screen and (max-width : 767px) {
 
-    form button.b1 {
-        display: none;
+        nav img {
+            width: 125px;
+        }
+    
+        form button.b1 {
+            display: none;
+        }
+    
+        form button.b2 {
+            display: inline-block;
+        }
+    
+        h4.prems {
+            margin-top: -130px;
+        }
+    
+        ul.filtres {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        main {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+    
+        section.HebergementaMarseille {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        article {
+            width: 100%;
+            background-color: #F2F2F2;
+            border-radius: 15%;
+            padding: 2%;
+            min-height: max-content;
+        }
+    
+        .photohebergement {
+            border-radius: 10px 10px 0 0;
+            width: 400px;
+            height: 150px;
+            object-fit: cover;
+        }
+       
+        aside {
+            width: 100%;
+            background-color: #F2F2F2;
+            border-radius: 15%;
+            padding: 2%;
+            min-height: max-content;
+        }
+        .photopopulaires {
+            width: 400px;
+            height: 150px;
+            border-radius: 10px 10px 0 0;
+            object-fit: cover;
+        }
+        section.Activitesmarseille {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+        }
     }
-
-    form button.b2 {
-        display: inline-block;
-    }
-
-    h4.prems {
-        margin-top: -130px;
-    }
-
-    ul.filtres {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    main {
+    
+    
+    footer {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        width: 100%;
     }
-
-    section.HebergementaMarseille {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
+    
     }
-
-    article {
-        width: 100%;
-        height: max-content;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    aside {
-        width: 100%;
-        height: max-content;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    section.Activitesmarseille {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-    footer {}
-
-}
