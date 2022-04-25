@@ -16,32 +16,34 @@ body {
 
 nav {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 25px 0 0 0;
+    justify-content: end;
+    margin-top: -55px;
 }
 
-nav img {
+.logobooki {
     width: 8%;
+    height: 45px;
+    margin-top: 40px;
 }
 
-ul.onglets {
+.onglets {
     display: flex;
     list-style: none;
     padding: 0 200px 0 0;
     gap: 20px;
+    justify-content: ;
 }
 
-.onglets li:hover {
+.choix:hover {
     border-top: 3px solid #0065FC;
     color: #0065FC;
-    margin-top: -25%;
-    padding-top: 22%;
+    margin-top: -23%;
+    padding-top: 20%;
 }
 
 form {
     display: flex;
-    width: 2000px;
+    width: 100%;
 }
 
 input {
@@ -72,7 +74,7 @@ form button.b2 {
 }
 
 form button.b1 {
-    width: 6%;
+    width: 8%;
     background-color: #0065FC;
     border-radius: 0 10px 10px 0px;
     font-size: large;
@@ -118,7 +120,7 @@ a:hover {
 }
 
 .filtres li {
-    border: 1px solid #DEEBFF;
+    border: 2px solid #DEEBFF;
     border-radius: 30px;
     font-weight: 600;
 }
@@ -162,7 +164,7 @@ article {
 aside {
     width: 30%;
     background-color: #F2F2F2;
-    border-radius: 15%;
+    border-radius: 0;
     padding: 2%;
     max-height: 600px;
 }
@@ -235,7 +237,7 @@ i.pop {
 }
 
 .activite2 {
-    width: 350px;
+    width: 300px;
     height: 160px;
     border-radius: 10px 10px 0 0;
     object-fit: cover;
@@ -244,6 +246,7 @@ i.pop {
 footer {
     display: flex;
     background-color: #F2F2F2;
+    margin-top: 5%;
 }
 
 .footerleft {
@@ -302,82 +305,126 @@ strong {
 }
 
 @media screen and (max-width : 767px) {
-    @media screen and (max-width : 767px) {
-
-        nav img {
-            width: 125px;
-        }
-    
-        form button.b1 {
-            display: none;
-        }
-    
-        form button.b2 {
-            display: inline-block;
-        }
-    
-        h4.prems {
-            margin-top: -130px;
-        }
-    
-        ul.filtres {
-            display: flex;
-            flex-wrap: wrap;
-        }
-    
-        main {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            width: 100%;
-        }
-    
-        section.HebergementaMarseille {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            width: 100%;
-        }
-        article {
-            width: 100%;
-            background-color: #F2F2F2;
-            border-radius: 15%;
-            padding: 2%;
-            min-height: max-content;
-        }
-    
-        .photohebergement {
-            border-radius: 10px 10px 0 0;
-            width: 400px;
-            height: 150px;
-            object-fit: cover;
-        }
-       
-        aside {
-            width: 100%;
-            background-color: #F2F2F2;
-            border-radius: 15%;
-            padding: 2%;
-            min-height: max-content;
-        }
-        .photopopulaires {
-            width: 400px;
-            height: 150px;
-            border-radius: 10px 10px 0 0;
-            object-fit: cover;
-        }
-        section.Activitesmarseille {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            width: 100%;
-        }
+    .blockpage {
+        width: 70%;
+        margin: 0;
+        padding: 0;
     }
-    
-    
+
+    .logobooki {
+        display: flex;
+        justify-content: center;
+        margin-left: 65%;
+        height: 45px;
+    }
+
+    .onglets {
+        display: flex;
+        margin-top: 20%;
+        padding: 0;
+        text-align: center;
+        border-bottom: 1px solid grey;
+
+    }
+
+    .choix {
+        margin-bottom: 10%;
+    }
+
+    .choix:hover {
+        border-top: 0;
+        border-bottom: 3px solid #0065FC;
+    }
+
+    form {
+        padding-top: 5%;
+        padding-left: 8%;
+    }
+
+    .fa-location-dot::before {
+        font-size: 25px;
+    }
+
+    form button.b1 {
+        display: none;
+    }
+
+    form button.b2 {
+        display: inline-block;
+    }
+
+    h4.prems {
+        margin-top: -200px;
+    }
+
+    .filtres {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20%;
+        margin-left: -100px;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    section.HebergementaMarseille {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        max-height: none;
+    }
+
+    article {
+        width: 100%;
+        background-color: #F2F2F2;
+        display: flex;
+        flex-wrap: wrap;
+        max-height: none;
+    }
+
+    .photohebergement {
+        border-radius: 10px 10px 0 0;
+        width: 350px;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    aside {
+        width: 100%;
+        background-color: #F2F2F2;
+        max-height: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    h2 {
+        gap: 80px;
+    }
+
+    .photopopulaires {
+        width: 150px;
+        height: 150px;
+        border-radius: 10px 10px 0 0;
+        object-fit: cover;
+    }
+
+    .activite1 {
+        width: 400px;
+        height: 150px;
+        display: flex;
+    }
+
+    .activite2 {
+        width: 400px;
+        height: 150px;
+        display: flex;
+    }
+
     footer {
         display: flex;
         flex-direction: column;
     }
-    
-    }
+
+}
