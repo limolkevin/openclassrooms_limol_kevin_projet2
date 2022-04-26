@@ -370,10 +370,10 @@ strong {
     }
 
     section.HebergementaMarseille {
+        max-height: none;
         display: flex;
         flex-direction: column-reverse;
         flex-wrap: wrap;
-        max-height: none;
     }
 
     article {
@@ -382,6 +382,7 @@ strong {
         display: flex;
         flex-wrap: wrap;
         max-height: none;
+        justify-content: space-around;
     }
 
     .photohebergement {
@@ -397,6 +398,7 @@ strong {
         max-height: none;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     h2 {
@@ -420,6 +422,19 @@ strong {
         width: 400px;
         height: 150px;
         display: flex;
+    }
+
+    .photo3 {
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .photo3bis {
+       display: flex;
+      flex-wrap: wrap;
+      margin-top: 230px;
+      margin-left: -400px;
     }
 
     footer {
