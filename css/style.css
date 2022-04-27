@@ -21,7 +21,7 @@ nav {
 }
 
 .logobooki {
-    width: 8%;
+    width: 10%;
     height: 45px;
     margin-top: 40px;
 }
@@ -322,13 +322,7 @@ strong {
         display: flex;
         margin-top: 20%;
         padding: 0;
-        text-align: center;
         border-bottom: 1px solid grey;
-
-    }
-
-    .choix {
-        margin-bottom: 10%;
     }
 
     .choix:hover {
@@ -423,18 +417,28 @@ strong {
         height: 150px;
         display: flex;
     }
+.Activitesmarseille{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+    #Activites {
+        width: 100%;
+    }
 
     .photo3 {
-        height: 150px;
+        width: 100%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .photo3bis {
-       display: flex;
-      flex-wrap: wrap;
-      margin-top: 230px;
-      margin-left: -400px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
     }
 
     footer {
