@@ -10,11 +10,12 @@
 
 body {
     font-family: 'Raleway', sans-serif;
+    margin: 0
 }
 
 /*code css pour le header */
 
-nav {
+.secondnav {
     display: flex;
     justify-content: end;
     margin-top: -55px;
@@ -31,7 +32,6 @@ nav {
     list-style: none;
     padding: 0 200px 0 0;
     gap: 20px;
-    justify-content: ;
 }
 
 .choix:hover {
@@ -150,7 +150,8 @@ h2 {
 }
 
 h2.normal {
-    margin: 0;
+    margin-left: 0;
+    margin-top: 30px;
 }
 
 article {
@@ -162,9 +163,8 @@ article {
 }
 
 aside {
-    width: 30%;
+    width: 25%;
     background-color: #F2F2F2;
-    border-radius: 0;
     padding: 2%;
     max-height: 600px;
 }
@@ -250,16 +250,16 @@ footer {
 }
 
 .footerleft {
-    width: 33%;
+    width: 30%;
 }
 
 .footermiddle {
-    width: 33%;
+    width: 30%;
 
 }
 
 .footerend {
-    width: 33%;
+    width: 30%;
 
 }
 
@@ -305,34 +305,59 @@ strong {
 }
 
 @media screen and (max-width : 767px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
     .blockpage {
-        width: 70%;
-        margin: 0;
-        padding: 0;
+        width: 100%;
+    }
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .logobooki {
         display: flex;
         justify-content: center;
-        margin-left: 65%;
-        height: 45px;
+        width: 100%;
     }
 
-    .onglets {
+    .secondnav {
+        width: 100%;
+        margin-top: 0;
+        justify-content: center;
+    }
+
+    ul.onglets {
         display: flex;
-        margin-top: 20%;
+        width: 100%;
+        margin: 0;
         padding: 0;
-        border-bottom: 1px solid grey;
+        column-gap: 0;
     }
 
-    .choix:hover {
+    li.choix {
+        width: 50%;
+        border-bottom: 1px solid grey;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    li.choix:hover {
         border-top: 0;
         border-bottom: 3px solid #0065FC;
     }
 
     form {
         padding-top: 5%;
-        padding-left: 8%;
     }
 
     .fa-location-dot::before {
@@ -371,23 +396,24 @@ strong {
     }
 
     article {
-        width: 100%;
+        width: 90%;
         background-color: #F2F2F2;
         display: flex;
         flex-wrap: wrap;
         max-height: none;
         justify-content: space-around;
+        border-radius: 5%;
     }
 
     .photohebergement {
         border-radius: 10px 10px 0 0;
-        width: 350px;
+        width: 330px;
         height: 100px;
         object-fit: cover;
     }
 
     aside {
-        width: 100%;
+        width: 95%;
         background-color: #F2F2F2;
         max-height: none;
         display: flex;
@@ -407,24 +433,26 @@ strong {
     }
 
     .activite1 {
-        width: 400px;
+        width: 340px;
         height: 150px;
         display: flex;
     }
 
     .activite2 {
-        width: 400px;
+        width: 340px;
         height: 150px;
         display: flex;
     }
-.Activitesmarseille{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
+
+    .Activitesmarseille {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 
     #Activites {
         width: 100%;
+        flex-direction: column;
     }
 
     .photo3 {
@@ -443,7 +471,22 @@ strong {
 
     footer {
         display: flex;
+        max-height: none;
         flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .footerleft {
+        width: 85%;
+    }
+
+    .footermiddle {
+        width: 85%;
+    }
+
+    .footerend {
+        width: 85%;
     }
 
 }
